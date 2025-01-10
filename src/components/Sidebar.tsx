@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Home, CheckSquare, Users, Settings } from 'lucide-react';
+import { Layout, Home, CheckSquare, Users, workflow, Settings, Workflow } from 'lucide-react';
 
 interface SidebarProps {
   onNavigate: (view: 'tasks' | 'settings') => void;
@@ -30,7 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onNavigate, currentView }) => {
             currentView === 'workflows' ? 'bg-gray-800' : 'hover:bg-gray-800'
           } transition-colors`}
         >
-          <CheckSquare className="w-5 h-5" />
+          <Workflow className="w-5 h-5" />
           <span>Workflows</span>
         </button>
         <button
